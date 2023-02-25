@@ -5,7 +5,6 @@
   padding: 0;
 }
 body {
-
   background-color: #8e92a2;
 }
 .topnav {
@@ -29,7 +28,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
 }
 
@@ -38,7 +37,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -46,7 +47,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -83,11 +86,21 @@ li {
   padding: 35px;
 }
 
+.news-text {
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;}
+
 .member {
   width: 35%;
   float: left;
   margin: auto;
 }
+
+
 
 .card {
   width: 40%;
@@ -98,22 +111,15 @@ li {
   padding: 10px;
 }
 
-
-
-
-@media (min-width: 480px){
-
-  .object-cover{
-width: 100%;
+@media (min-width: 480px) {
+  .object-cover {
+    width: 100%;
   }
 
   .text-xl {
-
     font-size: calc(1vw + 1vh + 0.3vmin);
- 
+  }
 }
-}
-
 
 h1 {
   @apply text-lg;
@@ -121,12 +127,13 @@ h1 {
 
 @screen lg {
   h1 {
-     @apply text-2xl;
+    @apply text-2xl;
   }
 }
 
 @screen xl {
   h1 {
-     @apply text-3xl;
+    @apply text-3xl;
   }
 }
+
