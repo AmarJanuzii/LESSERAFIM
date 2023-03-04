@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+window.addEventListener('load', function() {
+  var audio = document.getElementById("myAudio");
+  audio.play();
+=======
 $(function () {
   "use strict";
   if ("1" === loadingType)
@@ -581,4 +586,5 @@ $(function () {
         E(i, t);
       });
   });
+>>>>>>> 29d204d6a5e45bff896d97994ef1c4c239726ca2
 });
